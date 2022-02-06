@@ -1,1 +1,22 @@
-<p>quote-details works!</p>
+<div class="container">
+    <div class="col-md-8">
+        <p><span class="text-warning">Author:</span>{{quote.author}}</p>
+        <p><span class="text-warning">Editor:</span>{{quote.name}}</p>
+        <p><span class="text-warning">Title:</span>{{quote.title}}</p>
+    </div>
+    <div class="col">
+        <p><i (click)="addUps()" class="fa fa-thumbs-up"></i>{{vote}}</p>
+        <p><i (click)="addDowns()" class="fa fa-thumbs-down"></i>{{down}}</p>
+    </div>
+    <div class="row">
+        <p>Created: <em>{{quote.datePosted|date}}</em></p>
+        <!-- <p>Days Elapsed since posting:<em>{{quote.datePosted|dateCount}}</em></p> -->
+    </div>
+    <button (click)="quoteDelete()" class="btn btn-warning bg-danger">Delete</button>
+
+</div>
+
+
+ 
+ 
+
