@@ -4,10 +4,13 @@
         <p><span class="text-warning">Editor:</span>{{quote.name}}</p>
         <p><span class="text-warning">Title:</span>{{quote.title}}</p>
     </div>
+
     <div class="row">
         <p>Created: <em>{{quote.datePosted|date}}</em></p>
-        <!-- <p>Days Elapsed since posting:<em>{{quote.datePosted|dateCount}}</em></p> -->
+        <!-- <p>Days Elapsed since posting:<em>{{quote.datePosted|date}}</em></p -->
+    
     </div>
+        
     <button (click)='quoteComplete(true)' class="btn btn-warning bg-danger">Delete</button>
 
 </div>
