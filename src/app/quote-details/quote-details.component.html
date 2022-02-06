@@ -6,8 +6,8 @@
     </div>
 
     <div class="row">
-        <p>Created: <em>{{quote.datePosted|date}}</em></p>
-        <!-- <p>Days Elapsed since posting:<em>{{quote.datePosted|date}}</em></p -->
+        <p><span class="text-warning">Created On:</span><em>{{quote.datePosted|date}}</em></p>
+        <p><span class="text-warning"> Elapsed since posting:</span><em>{{quote.datePosted|datePipe}} days ago.</em></p>
     
     </div>
         
