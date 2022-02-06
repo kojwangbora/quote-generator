@@ -6,13 +6,14 @@
       
       <div class="col-md-8">
           <h2> Check your Quotes below:</h2>
-          <ul>
-              <li *ngFor='let quote of quotes; let i=index'>
-                  <h5>{{quote.name}}</h5>
-                  <button (click)='toggleDetails(i)' class="btn btn-danger">View</button>
-                  <app-quote-details *ngIf='quote.showDescription'[quote]='quote'></app-quote-details>
-              </li>
-          </ul>
+          <ol>
+            <li *ngFor='let quote of quotes; let i=index'>
+                <h5>"{{quote.description}}"</h5>
+                <button (click)='toggleDetails(i)' class="btn btn-danger">View</button>
+                <app-quote-details *ngIf='quote.showDescription'  [quote]='quote' (isComplete)='completeQuote($event, i)'></app-quote-details>
+                
+            </li>
+        </ol>
       </div>
       <div class="col-md-8">
           <!-- form -->
