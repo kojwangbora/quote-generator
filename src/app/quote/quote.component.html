@@ -9,7 +9,7 @@
                 <div class="all-cards">
                     <div *ngFor='let quote of quotes; let i=index' class="card">
                         <div class="card-body bg-secondary">
-                            <button (click)='toggleDetails(i)' class="btn btn-danger bg-warning">View</button>
+                            <button (click)='toggleDetails(i)' class="btn btn-danger bg-warning text-dark">View</button>
                             <h5 class="card-text"id="pcardo">"{{quote.description}}"</h5>
                             <app-quote-details *ngIf='quote.showDescription'  [quote]='quote' (isComplete)='completeQuote($event, i)'></app-quote-details>
                         </div>
