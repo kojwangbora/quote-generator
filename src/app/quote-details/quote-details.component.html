@@ -12,8 +12,8 @@
     </div>
         
     <div class="container-fluid" id="buttons">
-        <button class="btn btn-md btn-success">Like</button> 
-        <button class="btn btn-md btn-danger"> Dislike</button> 
+        <a href="#" (click)="addUps()" class="btn btn-md btn-success">Like {{vote}}</a> 
+        <a href="#" (click)="addDowns()" class="btn btn-md btn-danger"> Dislike {{down}}</a> 
         <button (click)='quoteComplete(true)' class="btn btn-warning bg-danger" id="left">Delete</button>
     </div>
     
