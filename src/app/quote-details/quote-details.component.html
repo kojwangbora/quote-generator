@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
     <div class="col-md-8">
         <p><span class="text-warning">Author:</span>{{quote.author}}</p>
         <p><span class="text-warning">Editor:</span>{{quote.name}}</p>
@@ -11,7 +11,12 @@
     
     </div>
         
-    <button (click)='quoteComplete(true)' class="btn btn-warning bg-danger">Delete</button>
+    <div class="container-fluid" id="buttons">
+        <button class="btn btn-md btn-success">Like</button> 
+        <button class="btn btn-md btn-danger"> Dislike</button> 
+        <button (click)='quoteComplete(true)' class="btn btn-warning bg-danger">Delete</button>
+    </div>
+    
 
 </div>
 <!-- <p>

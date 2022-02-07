@@ -1,1 +1,20 @@
- 
+.card-body{
+    height: 100%;
+    width: 100%;
+    /* background-color: red;  */
+  }
+  .btn{
+      float: right;
+  }
+
+  .overlay{
+    background-color:rgba(0, 225, 255, 0.301);
+    border-radius: 5px;
+    margin-top:4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 5%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 5%;
+  }
