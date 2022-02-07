@@ -28,14 +28,14 @@ export class QuoteComponent implements OnInit {
   }
 
   
-  // deleteGoal(index){
-  //   this.quotes.splice(index, 1)
-  // }
-  // addNewGoal(quote){
-  //   quote.datePosted =new Date()
-  //   this.quotes.push(quote)
-  //   console.log(this.quotes)
-  // }
+  
+  addNewGoal(quote){
+    let quoteLength= this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+     
+  }
   
 
 }
