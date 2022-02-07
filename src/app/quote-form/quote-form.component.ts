@@ -1,4 +1,4 @@
- import { Quote } from '@angular/compiler/public_api';
+import { Quotes } from './../quotes';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -7,8 +7,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
-   newQuote =new Quote(0, "", "", "", newDate());
-   @Output() addQuote = new EventEmitter<Quote>();
+   newQuote =new Quotes(0, "", "", "","", new Date());
+   @Output() addQuote = new EventEmitter<Quotes>();
 
    submitQuote(){
      this.addQuote.emit(this.newQuote);
@@ -18,9 +18,5 @@ export class QuoteFormComponent implements OnInit {
 
   ngOnInit(){
   }
-
-}
-function newDate(): any {
-  throw new Error('Function not implemented.');
 }
 
